@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32516.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-HelloWorld", "1-HelloWorld", "{3406B09D-3847-407F-952E-43F58A9A1201}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-WhenWereYouBorn", "2-WhenWereYouBorn", "{F66E9316-8553-4544-912F-491C0D552F88}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-PomodoroTimer", "3-PomodoroTimer", "{CBAEB5B8-2BB9-4817-A72C-F78D79968609}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-ShoppingCart", "4-ShoppingCart", "{0CC749F4-B603-465F-9AFF-754AAF836E15}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5-ProductSearch", "5-ProductSearch", "{F3DB4C10-B8A4-4F77-8B0E-AE2430C2A6D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld", "HelloWorld\HelloWorld.csproj", "{E9482B12-D106-49F7-96FF-2E93CD248896}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhenWereYouBorn", "WhenWereYouBorn\WhenWereYouBorn.csproj", "{FCE70133-BB1A-45B9-B90C-F7AE0AA2B305}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PomodoroTimer", "PomodoroTimer\PomodoroTimer.csproj", "{FDF2D190-8F27-41DF-BAB3-EEAE0634CD68}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E9482B12-D106-49F7-96FF-2E93CD248896}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9482B12-D106-49F7-96FF-2E93CD248896}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9482B12-D106-49F7-96FF-2E93CD248896}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9482B12-D106-49F7-96FF-2E93CD248896}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCE70133-BB1A-45B9-B90C-F7AE0AA2B305}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCE70133-BB1A-45B9-B90C-F7AE0AA2B305}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCE70133-BB1A-45B9-B90C-F7AE0AA2B305}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCE70133-BB1A-45B9-B90C-F7AE0AA2B305}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDF2D190-8F27-41DF-BAB3-EEAE0634CD68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDF2D190-8F27-41DF-BAB3-EEAE0634CD68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDF2D190-8F27-41DF-BAB3-EEAE0634CD68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDF2D190-8F27-41DF-BAB3-EEAE0634CD68}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E9482B12-D106-49F7-96FF-2E93CD248896} = {3406B09D-3847-407F-952E-43F58A9A1201}
+		{FCE70133-BB1A-45B9-B90C-F7AE0AA2B305} = {F66E9316-8553-4544-912F-491C0D552F88}
+		{FDF2D190-8F27-41DF-BAB3-EEAE0634CD68} = {CBAEB5B8-2BB9-4817-A72C-F78D79968609}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9605AF1D-AD65-4AF5-A863-3DDC3F4308A8}
+	EndGlobalSection
+EndGlobal

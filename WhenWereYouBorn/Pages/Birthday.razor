@@ -1,0 +1,24 @@
+﻿@page "/birthday"
+<h2>När är du född?</h2>
+
+<input type="text" @bind="dob" />
+<button class="btn btn-primary" @onclick="Submit">Skicka</button>
+<hr />
+@if (day != null)
+{
+    <p>Du föddes på en ... @day!</p>
+}
+
+@code {
+    private string dob = "";
+    private string day;
+
+    private void Submit()
+    {
+        var isValid = DateTime.TryParse(dob, out var date);
+        if (isValid)
+        {
+            day = date.DayOfWeek.ToString();
+        }
+    }
+}
