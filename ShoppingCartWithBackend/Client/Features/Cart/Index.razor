@@ -1,0 +1,12 @@
+﻿@page "/cart"
+@using ShoppingCartStarter.Client.Features.Cart.Components
+
+<h3>Your shopping cart</h3>
+
+@if (Model is not null)
+{
+    @foreach (var line in Model.Items)
+    {
+        <Item details="@line" OnDeleted="ReloadCart" OnQuantityChanged="ReloadCart"/>
+    }
+}
