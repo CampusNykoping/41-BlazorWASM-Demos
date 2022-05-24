@@ -13,11 +13,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-ShoppingCart", "4-Shoppin
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5-ProductSearch", "5-ProductSearch", "{F3DB4C10-B8A4-4F77-8B0E-AE2430C2A6D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld", "HelloWorld\HelloWorld.csproj", "{E9482B12-D106-49F7-96FF-2E93CD248896}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorld", "HelloWorld\HelloWorld.csproj", "{E9482B12-D106-49F7-96FF-2E93CD248896}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhenWereYouBorn", "WhenWereYouBorn\WhenWereYouBorn.csproj", "{FCE70133-BB1A-45B9-B90C-F7AE0AA2B305}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhenWereYouBorn", "WhenWereYouBorn\WhenWereYouBorn.csproj", "{FCE70133-BB1A-45B9-B90C-F7AE0AA2B305}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PomodoroTimer", "PomodoroTimer\PomodoroTimer.csproj", "{FDF2D190-8F27-41DF-BAB3-EEAE0634CD68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PomodoroTimer", "PomodoroTimer\PomodoroTimer.csproj", "{FDF2D190-8F27-41DF-BAB3-EEAE0634CD68}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingCartStarter.Client", "ShoppingCartWithBackend\Client\ShoppingCartStarter.Client.csproj", "{2B051E6E-5A59-45AA-A75A-D24C34537995}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingCartStarter.Server", "ShoppingCartWithBackend\Server\ShoppingCartStarter.Server.csproj", "{3047F1EE-50A8-42F6-9E5D-FB3334C2C51C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingCartStarter.Shared", "ShoppingCartWithBackend\Shared\ShoppingCartStarter.Shared.csproj", "{7AAE9B81-7332-4D31-B0F7-B899906EB4B6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +43,18 @@ Global
 		{FDF2D190-8F27-41DF-BAB3-EEAE0634CD68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDF2D190-8F27-41DF-BAB3-EEAE0634CD68}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDF2D190-8F27-41DF-BAB3-EEAE0634CD68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B051E6E-5A59-45AA-A75A-D24C34537995}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B051E6E-5A59-45AA-A75A-D24C34537995}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B051E6E-5A59-45AA-A75A-D24C34537995}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B051E6E-5A59-45AA-A75A-D24C34537995}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3047F1EE-50A8-42F6-9E5D-FB3334C2C51C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3047F1EE-50A8-42F6-9E5D-FB3334C2C51C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3047F1EE-50A8-42F6-9E5D-FB3334C2C51C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3047F1EE-50A8-42F6-9E5D-FB3334C2C51C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AAE9B81-7332-4D31-B0F7-B899906EB4B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AAE9B81-7332-4D31-B0F7-B899906EB4B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AAE9B81-7332-4D31-B0F7-B899906EB4B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AAE9B81-7332-4D31-B0F7-B899906EB4B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -45,6 +63,9 @@ Global
 		{E9482B12-D106-49F7-96FF-2E93CD248896} = {3406B09D-3847-407F-952E-43F58A9A1201}
 		{FCE70133-BB1A-45B9-B90C-F7AE0AA2B305} = {F66E9316-8553-4544-912F-491C0D552F88}
 		{FDF2D190-8F27-41DF-BAB3-EEAE0634CD68} = {CBAEB5B8-2BB9-4817-A72C-F78D79968609}
+		{2B051E6E-5A59-45AA-A75A-D24C34537995} = {0CC749F4-B603-465F-9AFF-754AAF836E15}
+		{3047F1EE-50A8-42F6-9E5D-FB3334C2C51C} = {0CC749F4-B603-465F-9AFF-754AAF836E15}
+		{7AAE9B81-7332-4D31-B0F7-B899906EB4B6} = {0CC749F4-B603-465F-9AFF-754AAF836E15}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9605AF1D-AD65-4AF5-A863-3DDC3F4308A8}
