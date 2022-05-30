@@ -1,0 +1,46 @@
+﻿@page "/"
+
+<div class="container">
+    <div class="form-group">
+        <input class="form-control"
+               @bind-value="searchTerm" id="search"
+               placeholder="Product to search for..." 
+               @bind-value:event="oninput" />
+    </div>
+
+    @foreach (var item in searchResults)
+    {
+        <div class="row align-items-center border-bottom">
+            <div class="col-sm">
+                <img src="images/@item.Image" class="mr-3">
+            </div>
+            <div class="col-sm">
+                <h5 class="mt-0">@item.Title</h5>
+            </div>
+            <div class="col-sm">
+                <h5 class="mt-0">@item.Price.ToString("c")</h5>
+            </div>
+        </div>
+    }
+
+</div>
+
+
+@code {
+    private string searchTerm { get; set; }
+
+    private IEnumerable<Data.Product> searchResults =>
+        products.Where(p => string.IsNullOrEmpty(searchTerm) ||
+                        p.Title.ToLower().Contains(searchTerm.ToLower())
+        );
+
+    // Litet hårdkodade testdata:
+    List<Data.Product> products { get; set; } = new List<Data.Product>
+    {
+        new Data.Product {Title = "Smart speaker", Price = 22m, Image = "test-image.png"},
+        new Data.Product {Title = "Dumb speaker", Price = 89m, Image = "test-image.png"},
+        new Data.Product {Title = "Speaker cable", Price = 12m, Image = "test-image.png"},
+        new Data.Product {Title = "T-Shirt", Price = 32m, Image = "test-image.png"},
+        new Data.Product {Title = "Large TV", Price = 119.90m, Image = "test-image.png"}
+    };
+}
