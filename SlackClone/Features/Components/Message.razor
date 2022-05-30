@@ -1,0 +1,16 @@
+﻿@using SlackClone.Domain
+
+<div class="card">
+    <div class="card-body">
+        <div>
+            <strong>@Details.PostedBy</strong>
+            <span>@Details.PostedOn</span>
+        </div>
+        <span>@Details.Message</span>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public SlackMessage Details { get; set; }
+}

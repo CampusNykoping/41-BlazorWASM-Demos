@@ -1,0 +1,26 @@
+﻿@using SlackClone.Domain
+
+<div class="card my-3">
+    <div class="card-body">
+        <EditForm Model="NewMessage" OnValidSubmit="HandleSubmit">
+            <div class="form-group">
+                <InputTextArea @bind-Value="NewMessage.Message" 
+                               class="form-control" 
+                               placeholder="type something witty here!" />
+            </div>
+            <button class="btn btn-primary my-2">Post</button>
+        </EditForm>
+    </div>
+</div>
+
+@code {
+    public SlackMessage NewMessage { get; set; } = new SlackMessage();
+
+    [Parameter]
+    public EventCallback<SlackMessage> OnSent { get; set; }
+
+    public async Task HandleSubmit()
+    {
+        await OnSent.InvokeAsync(NewMessage);
+    }
+}
