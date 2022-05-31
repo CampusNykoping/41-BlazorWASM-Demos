@@ -1,0 +1,64 @@
+﻿<div class="message-container">
+
+    @if (editMode)
+    {
+        <EditMessage MessageText="@Details.Message" 
+                 OnUpdated="@HandleMessageChanged" 
+                 OnCancelled="@HandleEditCancelled"/>
+    }
+    else
+    {
+        @if (overlayVisible)
+        {
+            <div class="overlay">
+                <div class="text">Edit</div>
+            </div>
+        }
+
+        <div class="message"
+         @onclick="ToggleEdit"
+         @onmouseover="ShowOverlay"
+         @onmouseout="HideOverlay">
+
+            <Message Details="Details" />
+        </div>
+    }
+</div>
+
+
+@code {
+
+    [Parameter]
+    public SlackMessage Details { get; set; }
+
+    private bool overlayVisible;
+
+    void ShowOverlay()
+    {
+        overlayVisible = true;
+    }
+
+    void HideOverlay()
+    {
+        overlayVisible = false;
+    }
+
+    private bool editMode;
+
+    void ToggleEdit()
+    {
+        editMode = true;
+        overlayVisible = false;
+    }
+
+    void HandleEditCancelled()
+    {
+        editMode = false;
+    }
+
+    void HandleMessageChanged(string newMessage)
+    {
+        Details.Message = newMessage;
+        editMode = false;
+    }
+}

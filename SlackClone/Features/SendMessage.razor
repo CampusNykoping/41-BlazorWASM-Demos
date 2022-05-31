@@ -1,6 +1,4 @@
-﻿@using SlackClone.Domain
-
-<div class="card my-3">
+﻿<div class="card my-3">
     <div class="card-body">
         <EditForm Model="NewMessage" OnValidSubmit="HandleSubmit">
             <div class="form-group">
@@ -19,8 +17,13 @@
     [Parameter]
     public EventCallback<SlackMessage> OnSent { get; set; }
 
-    public async Task HandleSubmit()
-    {
-        await OnSent.InvokeAsync(NewMessage);
-    }
+    async Task HandleSubmit()
+{
+    NewMessage.PostedBy = "ClaesE";
+    NewMessage.PostedOn = DateTime.Now;
+    await OnSent.InvokeAsync(NewMessage);
+
+    // "reset" NewMessage
+    NewMessage = new SlackMessage();
+}
 }
